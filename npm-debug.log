@@ -1,0 +1,123 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '{TaskDao}',
+1 verbose cli   'from',
+1 verbose cli   './models/taskDao.js' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData {TaskDao}
+8 silly fetchPackageMetaData from
+9 silly fetchPackageMetaData ./models/taskDao.js
+10 silly fetchOtherPackageData {TaskDao}
+11 silly cache add args [ '{TaskDao}', null ]
+12 verbose cache add spec {TaskDao}
+13 silly fetchNamedPackageData from
+14 silly mapToRegistry name from
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry http://registry.npmjs.org/
+17 silly mapToRegistry uri http://registry.npmjs.org/from
+18 silly fetchOtherPackageData ./models/taskDao.js
+19 silly cache add args [ './models/taskDao.js', null ]
+20 verbose cache add spec ./models/taskDao.js
+21 silly cache add parsed spec Result {
+21 silly cache add   raw: '{TaskDao}',
+21 silly cache add   scope: null,
+21 silly cache add   name: null,
+21 silly cache add   rawSpec: '{TaskDao}',
+21 silly cache add   spec: '/home/deepti/Desktop/todo/{TaskDao}',
+21 silly cache add   type: 'local' }
+22 verbose request uri http://registry.npmjs.org/from
+23 verbose request no auth needed
+24 info attempt registry request try #1 at 8:14:41 AM
+25 verbose request id e909edf7c504ad02
+26 http request GET http://registry.npmjs.org/from
+27 silly cache add parsed spec Result {
+27 silly cache add   raw: './models/taskDao.js',
+27 silly cache add   scope: null,
+27 silly cache add   name: null,
+27 silly cache add   rawSpec: './models/taskDao.js',
+27 silly cache add   spec: '/home/deepti/Desktop/todo/models/taskDao.js',
+27 silly cache add   type: 'local' }
+28 error addLocal Could not install /home/deepti/Desktop/todo/{TaskDao}
+29 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/home/deepti/Desktop/todo/{TaskDao}'
+29 silly fetchPackageMetaData  error for {TaskDao} { Error: ENOENT: no such file or directory, open '/home/deepti/Desktop/todo/{TaskDao}'
+29 silly fetchPackageMetaData   errno: -2,
+29 silly fetchPackageMetaData   code: 'ENOENT',
+29 silly fetchPackageMetaData   syscall: 'open',
+29 silly fetchPackageMetaData   path: '/home/deepti/Desktop/todo/{TaskDao}' }
+30 silly addLocalTarball shasum (computed) 2e28da20d98469475e3f8503a2cd6d005319c1b8
+31 verbose addTmpTarball /home/deepti/Desktop/todo/models/taskDao.js not in flight; adding
+32 verbose addTmpTarball validating metadata from /home/deepti/Desktop/todo/models/taskDao.js
+33 verbose tar unpack /home/deepti/Desktop/todo/models/taskDao.js
+34 verbose tar unpacking to /tmp/npm-5635-17d97c43/unpack-d92919f7
+35 silly gentlyRm /tmp/npm-5635-17d97c43/unpack-d92919f7 is being purged
+36 verbose gentlyRm don't care about contents; nuking /tmp/npm-5635-17d97c43/unpack-d92919f7
+37 silly gunzTarPerm modes [ '755', '644' ]
+38 error not a package /home/deepti/Desktop/todo/models/taskDao.js
+39 error addLocal Could not install /home/deepti/Desktop/todo/models/taskDao.js
+40 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/tmp/npm-5635-17d97c43/unpack-d92919f7/package.json'
+40 silly fetchPackageMetaData  error for ./models/taskDao.js { Error: ENOENT: no such file or directory, open '/tmp/npm-5635-17d97c43/unpack-d92919f7/package.json'
+40 silly fetchPackageMetaData   errno: -2,
+40 silly fetchPackageMetaData   code: 'ENOENT',
+40 silly fetchPackageMetaData   syscall: 'open',
+40 silly fetchPackageMetaData   path: '/tmp/npm-5635-17d97c43/unpack-d92919f7/package.json' }
+41 http 200 http://registry.npmjs.org/from
+42 verbose headers { date: 'Wed, 12 Jun 2019 02:44:41 GMT',
+42 verbose headers   'content-type': 'application/json',
+42 verbose headers   'transfer-encoding': 'chunked',
+42 verbose headers   connection: 'keep-alive',
+42 verbose headers   'set-cookie':
+42 verbose headers    [ '__cfduid=dd8ab619c0446fd18e189e12984aa66d71560307481; expires=Thu, 11-Jun-20 02:44:41 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+42 verbose headers   'cf-cache-status': 'HIT',
+42 verbose headers   'cache-control': 'max-age=300',
+42 verbose headers   'cf-ray': '4e587c025e9f70b4-SIN',
+42 verbose headers   etag: 'W/"0133070ebf2ad754e529e26790ca9b5c"',
+42 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+42 verbose headers   'last-modified': 'Thu, 03 Jan 2019 22:19:22 GMT',
+42 verbose headers   vary: 'accept-encoding, accept',
+42 verbose headers   'x-amz-meta-rev': '20-cd02e8aaac1e6ccacb5390a1e7f795c7',
+42 verbose headers   server: 'cloudflare',
+42 verbose headers   'content-encoding': 'gzip' }
+43 silly get cb [ 200,
+43 silly get   { date: 'Wed, 12 Jun 2019 02:44:41 GMT',
+43 silly get     'content-type': 'application/json',
+43 silly get     'transfer-encoding': 'chunked',
+43 silly get     connection: 'keep-alive',
+43 silly get     'set-cookie':
+43 silly get      [ '__cfduid=dd8ab619c0446fd18e189e12984aa66d71560307481; expires=Thu, 11-Jun-20 02:44:41 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+43 silly get     'cf-cache-status': 'HIT',
+43 silly get     'cache-control': 'max-age=300',
+43 silly get     'cf-ray': '4e587c025e9f70b4-SIN',
+43 silly get     etag: 'W/"0133070ebf2ad754e529e26790ca9b5c"',
+43 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+43 silly get     'last-modified': 'Thu, 03 Jan 2019 22:19:22 GMT',
+43 silly get     vary: 'accept-encoding, accept',
+43 silly get     'x-amz-meta-rev': '20-cd02e8aaac1e6ccacb5390a1e7f795c7',
+43 silly get     server: 'cloudflare',
+43 silly get     'content-encoding': 'gzip' } ]
+44 verbose get saving from to /home/deepti/.npm/registry.npmjs.org/from/.cache.json
+45 silly rollbackFailedOptional Starting
+46 silly rollbackFailedOptional Finishing
+47 silly runTopLevelLifecycles Starting
+48 silly runTopLevelLifecycles Finishing
+49 silly install printInstalled
+50 verbose stack Error: ENOENT: no such file or directory, open '/home/deepti/Desktop/todo/{TaskDao}'
+51 verbose cwd /home/deepti/Desktop/todo
+52 error Linux 4.15.0-51-generic
+53 error argv "/usr/bin/node" "/usr/bin/npm" "install" "{TaskDao}" "from" "./models/taskDao.js"
+54 error node v8.10.0
+55 error npm  v3.5.2
+56 error path /home/deepti/Desktop/todo/{TaskDao}
+57 error code ENOENT
+58 error errno -2
+59 error syscall open
+60 error enoent ENOENT: no such file or directory, open '/home/deepti/Desktop/todo/{TaskDao}'
+61 error enoent ENOENT: no such file or directory, open '/home/deepti/Desktop/todo/{TaskDao}'
+61 error enoent This is most likely not a problem with npm itself
+61 error enoent and is related to npm not being able to find a file.
+62 verbose exit [ -2, true ]
